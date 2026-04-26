@@ -1,0 +1,1964 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0226.1626                               -->
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0226.1626)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+    <color-palette custom='true' name='Olympic' type='regular'>
+      <color>#0078d0</color>
+      <color>#000000</color>
+      <color>#f0282d</color>
+      <color>#ffb114</color>
+      <color>#00a651</color>
+      <color>#ffffff</color>
+    </color-palette>
+  </preferences>
+  <style>
+    <style-rule element='axis'>
+      <format attr='line-visibility' value='off' />
+    </style-rule>
+    <style-rule element='worksheet'>
+      <format attr='font-size' value='8' />
+      <format attr='color' value='#000000' />
+    </style-rule>
+    <style-rule element='gridline'>
+      <format attr='line-visibility' value='off' />
+    </style-rule>
+    <style-rule element='zeroline'>
+      <format attr='line-visibility' value='off' />
+    </style-rule>
+    <style-rule element='title'>
+      <format attr='font-size' value='10' />
+      <format attr='color' value='#000000' />
+      <format attr='font-weight' value='bold' />
+    </style-rule>
+  </style>
+  <datasources>
+    <datasource caption='athlete_events' inline='true' name='federated.0olozf80ejacbb1dmp29a0370sl0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='athlete_events' name='textscan.1pwm4e40z9ed1n1bgnb820kyipks'>
+            <connection class='textscan' directory='D:/Tableau_2026/Dataset/Olympics' filename='athlete_events.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1pwm4e40z9ed1n1bgnb820kyipks' name='athlete_events.csv' table='[athlete_events#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='string' name='Name' ordinal='1' />
+            <column datatype='string' name='Sex' ordinal='2' />
+            <column datatype='integer' name='Age' ordinal='3' />
+            <column datatype='integer' name='Height' ordinal='4' />
+            <column datatype='integer' name='Weight' ordinal='5' />
+            <column datatype='string' name='Team' ordinal='6' />
+            <column datatype='string' name='NOC' ordinal='7' />
+            <column datatype='string' name='Games' ordinal='8' />
+            <column datatype='integer' name='Year' ordinal='9' />
+            <column datatype='string' name='Season' ordinal='10' />
+            <column datatype='string' name='City' ordinal='11' />
+            <column datatype='string' name='Sport' ordinal='12' />
+            <column datatype='string' name='Event' ordinal='13' />
+            <column datatype='string' name='Medal' ordinal='14' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[athlete_events.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[athlete_events.csv]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[athlete_events.csv]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sex</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sex]</local-name>
+            <parent-name>[athlete_events.csv]</parent-name>
+            <remote-alias>Sex</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[athlete_events.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Height</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Height]</local-name>
+            <parent-name>[athlete_events.csv]</parent-name>
+            <remote-alias>Height</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weight</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Weight]</local-name>
+            <parent-name>[athlete_events.csv]</parent-name>
+            <remote-alias>Weight</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Team]</local-name>
+            <parent-name>[athlete_events.csv]</parent-name>
+            <remote-alias>Team</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NOC</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NOC]</local-name>
+            <parent-name>[athlete_events.csv]</parent-name>
+            <remote-alias>NOC</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Games</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Games]</local-name>
+            <parent-name>[athlete_events.csv]</parent-name>
+            <remote-alias>Games</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[athlete_events.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Season</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Season]</local-name>
+            <parent-name>[athlete_events.csv]</parent-name>
+            <remote-alias>Season</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[athlete_events.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sport</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sport]</local-name>
+            <parent-name>[athlete_events.csv]</parent-name>
+            <remote-alias>Sport</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Event</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Event]</local-name>
+            <parent-name>[athlete_events.csv]</parent-name>
+            <remote-alias>Event</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Medal</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Medal]</local-name>
+            <parent-name>[athlete_events.csv]</parent-name>
+            <remote-alias>Medal</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Age]' peg='0' size='5' />
+      </column>
+      <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Height (bin)' datatype='integer' name='[Height (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Height]' peg='0' size='5' />
+      </column>
+      <column datatype='integer' name='[Height]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Medal]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Season]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Sex]' role='dimension' type='nominal' />
+      <column caption='Weight (bin)' datatype='integer' name='[Weight (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='1' formula='[Weight]' peg='0' size='10' />
+      </column>
+      <column datatype='integer' name='[Weight]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='athlete_events.csv' datatype='table' name='[__tableau_internal_object_id__].[athlete_events.csv_0CFF5BE17B044FD1AB503F51C92AFEBA]' role='measure' type='quantitative' />
+      <column-instance column='[Medal]' derivation='None' name='[none:Medal:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Season]' derivation='None' name='[none:Season:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Sex]' derivation='None' name='[none:Sex:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Sex:nk]' palette='Olympic' type='palette'>
+            <map to='#00a651'>
+              <bucket>&quot;F&quot;</bucket>
+            </map>
+            <map to='#f0282d'>
+              <bucket>&quot;M&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Season:nk]' palette='Olympic' type='palette'>
+            <map to='#0078d0'>
+              <bucket>&quot;Winter&quot;</bucket>
+            </map>
+            <map to='#ffb114'>
+              <bucket>&quot;Summer&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Medal:nk]' palette='Olympic' type='palette'>
+            <map to='#00a651'>
+              <bucket>&quot;Silver&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;NA&quot;</bucket>
+            </map>
+            <map to='#f0282d'>
+              <bucket>&quot;Bronze&quot;</bucket>
+            </map>
+            <map to='#ffb114'>
+              <bucket>&quot;Gold&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='athlete_events.csv' id='athlete_events.csv_0CFF5BE17B044FD1AB503F51C92AFEBA'>
+            <properties context=''>
+              <relation connection='textscan.1pwm4e40z9ed1n1bgnb820kyipks' name='athlete_events.csv' table='[athlete_events#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='ID' ordinal='0' />
+                  <column datatype='string' name='Name' ordinal='1' />
+                  <column datatype='string' name='Sex' ordinal='2' />
+                  <column datatype='integer' name='Age' ordinal='3' />
+                  <column datatype='integer' name='Height' ordinal='4' />
+                  <column datatype='integer' name='Weight' ordinal='5' />
+                  <column datatype='string' name='Team' ordinal='6' />
+                  <column datatype='string' name='NOC' ordinal='7' />
+                  <column datatype='string' name='Games' ordinal='8' />
+                  <column datatype='integer' name='Year' ordinal='9' />
+                  <column datatype='string' name='Season' ordinal='10' />
+                  <column datatype='string' name='City' ordinal='11' />
+                  <column datatype='string' name='Sport' ordinal='12' />
+                  <column datatype='string' name='Event' ordinal='13' />
+                  <column datatype='string' name='Medal' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Age Distribution-Winners'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='athlete_events' name='federated.0olozf80ejacbb1dmp29a0370sl0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0olozf80ejacbb1dmp29a0370sl0'>
+            <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Age]' peg='0' size='5' />
+            </column>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Medal]' role='dimension' type='nominal' />
+            <column-instance column='[Age]' derivation='Count' name='[cnt:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Medal]' derivation='None' name='[none:Medal:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Age (bin):qk]' included-values='non-null' />
+          <filter class='categorical' column='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Medal:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Medal:nk]' member='&quot;Bronze&quot;' />
+              <groupfilter function='member' level='[none:Medal:nk]' member='&quot;Gold&quot;' />
+              <groupfilter function='member' level='[none:Medal:nk]' member='&quot;Silver&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Medal:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Gold&quot;</bucket>
+              <bucket>&quot;Silver&quot;</bucket>
+              <bucket>&quot;Bronze&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Medal:nk]</column>
+            <column>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Age (bin):qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Age (bin):qk]' scope='cols' value='' />
+            <format attr='title' class='0' field='[federated.0olozf80ejacbb1dmp29a0370sl0].[cnt:Age:qk]' scope='rows' value='' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Medal:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0olozf80ejacbb1dmp29a0370sl0].[cnt:Age:qk]</rows>
+        <cols>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Age (bin):qk]</cols>
+      </table>
+      <simple-id uuid='{2606DDFC-7FAF-4179-B812-18C9F4FA5E0E}' />
+    </worksheet>
+    <worksheet name='Height Distribution-Winners'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='athlete_events' name='federated.0olozf80ejacbb1dmp29a0370sl0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0olozf80ejacbb1dmp29a0370sl0'>
+            <column caption='Height (bin)' datatype='integer' name='[Height (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Height]' peg='0' size='5' />
+            </column>
+            <column datatype='integer' name='[Height]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Medal]' role='dimension' type='nominal' />
+            <column-instance column='[Height]' derivation='Count' name='[cnt:Height:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Height (bin)]' derivation='None' name='[none:Height (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Medal]' derivation='None' name='[none:Medal:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Height (bin):qk]' included-values='non-null' />
+          <filter class='categorical' column='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Medal:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Medal:nk]' member='&quot;Bronze&quot;' />
+              <groupfilter function='member' level='[none:Medal:nk]' member='&quot;Gold&quot;' />
+              <groupfilter function='member' level='[none:Medal:nk]' member='&quot;Silver&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Medal:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Gold&quot;</bucket>
+              <bucket>&quot;Silver&quot;</bucket>
+              <bucket>&quot;Bronze&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Medal:nk]</column>
+            <column>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Height (bin):qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Height (bin):qk]' scope='cols' value='' />
+            <format attr='title' class='0' field='[federated.0olozf80ejacbb1dmp29a0370sl0].[cnt:Height:qk]' scope='rows' value='' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Medal:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0olozf80ejacbb1dmp29a0370sl0].[cnt:Height:qk]</rows>
+        <cols>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Height (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.0olozf80ejacbb1dmp29a0370sl0].[Height (bin)]</column>
+          <column>[federated.0olozf80ejacbb1dmp29a0370sl0].[Weight (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{7DC20C28-C6A9-4810-99DB-AEF7290255AA}' />
+    </worksheet>
+    <worksheet name='Male Vs. Female Participation Over Year '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='athlete_events' name='federated.0olozf80ejacbb1dmp29a0370sl0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0olozf80ejacbb1dmp29a0370sl0'>
+            <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Sex]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[ID]' derivation='CountD' name='[ctd:ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sex]' derivation='None' name='[none:Sex:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0olozf80ejacbb1dmp29a0370sl0].[ctd:ID:qk]' scope='rows' value='' />
+            <format attr='title' class='0' field='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Year:qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0olozf80ejacbb1dmp29a0370sl0].[ctd:ID:qk]' value='c#,##0,K' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Sex:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0olozf80ejacbb1dmp29a0370sl0].[ctd:ID:qk]</rows>
+        <cols>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{4DEFCAFE-F3CD-4FCC-A973-0F1AF9A737E4}' />
+    </worksheet>
+    <worksheet name='Top 10 Countries with Total Medals'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='athlete_events' name='federated.0olozf80ejacbb1dmp29a0370sl0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0olozf80ejacbb1dmp29a0370sl0'>
+            <column datatype='string' name='[Medal]' role='dimension' type='nominal' />
+            <column datatype='string' name='[NOC]' role='dimension' type='nominal' />
+            <column-instance column='[Medal]' derivation='Count' name='[cnt:Medal:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Medal]' derivation='None' name='[none:Medal:nk]' pivot='key' type='nominal' />
+            <column-instance column='[NOC]' derivation='None' name='[none:NOC:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Medal:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Medal:nk]' member='&quot;Bronze&quot;' />
+              <groupfilter function='member' level='[none:Medal:nk]' member='&quot;Gold&quot;' />
+              <groupfilter function='member' level='[none:Medal:nk]' member='&quot;Silver&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:NOC:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([Medal])' function='order' user:ui-marker='order'>
+                <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;AFG&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;AHO&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;ALG&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;ANZ&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;ARG&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;ARM&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;AUS&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;AUT&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;AZE&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;BAH&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;BAR&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;BDI&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;BEL&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;BER&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;BLR&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;BOH&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;BOT&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;BRA&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;BRN&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;BUL&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;CAN&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;CHI&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;CHN&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;CIV&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;CMR&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;COL&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;CRC&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;CRO&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;CUB&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;CYP&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;CZE&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;DEN&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;DJI&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;DOM&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;ECU&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;EGY&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;ERI&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;ESP&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;EST&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;ETH&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;EUN&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;FIJ&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;FIN&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;FRA&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;FRG&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;GAB&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;GBR&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;GDR&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;GEO&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;GER&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;GHA&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;GRE&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;GRN&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;GUA&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;GUY&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;HAI&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;HKG&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;HUN&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;INA&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;IND&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;IOA&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;IRI&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;IRL&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;IRQ&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;ISL&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;ISR&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;ISV&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;ITA&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;JAM&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;JOR&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;JPN&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;KAZ&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;KEN&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;KGZ&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;KOR&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;KOS&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;KSA&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;KUW&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;LAT&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;LIB&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;LIE&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;LTU&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;LUX&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;MAR&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;MAS&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;MDA&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;MEX&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;MGL&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;MKD&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;MNE&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;MON&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;MOZ&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;MRI&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;NAM&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;NED&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;NEP&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;NGR&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;NIG&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;NOR&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;NZL&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;PAK&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;PAN&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;PAR&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;PER&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;PHI&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;POL&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;POR&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;PRK&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;PUR&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;QAT&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;ROU&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;RSA&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;RUS&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;SCG&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;SEN&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;SGP&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;SLO&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;SRB&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;SRI&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;SUD&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;SUI&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;SUR&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;SVK&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;SWE&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;SYR&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;TAN&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;TCH&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;TGA&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;THA&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;TJK&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;TOG&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;TPE&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;TTO&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;TUN&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;TUR&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;UAE&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;UAR&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;UGA&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;UKR&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;URS&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;URU&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;USA&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;UZB&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;VEN&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;VIE&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;WIF&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;YUG&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;ZAM&quot;' />
+                  <groupfilter function='member' level='[none:NOC:nk]' member='&quot;ZIM&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:NOC:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0olozf80ejacbb1dmp29a0370sl0].[cnt:Medal:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Medal:nk]</column>
+            <column>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:NOC:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0olozf80ejacbb1dmp29a0370sl0].[cnt:Medal:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0olozf80ejacbb1dmp29a0370sl0].[cnt:Medal:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#0078d0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:NOC:nk]</rows>
+        <cols>[federated.0olozf80ejacbb1dmp29a0370sl0].[cnt:Medal:qk]</cols>
+      </table>
+      <simple-id uuid='{448BCB9A-4791-4068-89D7-111FCF640778}' />
+    </worksheet>
+    <worksheet name='Top 10 Sports with Total Medals'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='athlete_events' name='federated.0olozf80ejacbb1dmp29a0370sl0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0olozf80ejacbb1dmp29a0370sl0'>
+            <column datatype='string' name='[Medal]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Sport]' role='dimension' type='nominal' />
+            <column-instance column='[Medal]' derivation='Count' name='[cnt:Medal:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Medal]' derivation='None' name='[none:Medal:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sport]' derivation='None' name='[none:Sport:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Medal:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Medal:nk]' member='&quot;Bronze&quot;' />
+              <groupfilter function='member' level='[none:Medal:nk]' member='&quot;Gold&quot;' />
+              <groupfilter function='member' level='[none:Medal:nk]' member='&quot;Silver&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Sport:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([Medal])' function='order' user:ui-marker='order'>
+                <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Alpine Skiing&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Alpinism&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Archery&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Art Competitions&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Athletics&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Badminton&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Baseball&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Basketball&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Beach Volleyball&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Biathlon&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Bobsleigh&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Boxing&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Canoeing&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Cricket&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Croquet&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Cross Country Skiing&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Curling&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Cycling&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Diving&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Equestrianism&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Fencing&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Figure Skating&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Football&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Freestyle Skiing&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Golf&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Gymnastics&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Handball&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Hockey&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Ice Hockey&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Jeu De Paume&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Judo&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Lacrosse&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Luge&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Military Ski Patrol&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Modern Pentathlon&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Motorboating&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Nordic Combined&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Polo&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Racquets&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Rhythmic Gymnastics&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Roque&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Rowing&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Rugby&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Rugby Sevens&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Sailing&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Shooting&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Short Track Speed Skating&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Skeleton&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Ski Jumping&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Snowboarding&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Softball&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Speed Skating&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Swimming&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Synchronized Swimming&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Table Tennis&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Taekwondo&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Tennis&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Trampolining&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Triathlon&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Tug-Of-War&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Volleyball&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Water Polo&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Weightlifting&quot;' />
+                  <groupfilter function='member' level='[none:Sport:nk]' member='&quot;Wrestling&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Sport:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0olozf80ejacbb1dmp29a0370sl0].[cnt:Medal:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Medal:nk]</column>
+            <column>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Sport:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0olozf80ejacbb1dmp29a0370sl0].[cnt:Medal:qk]' scope='cols' value='' />
+            <format attr='display' class='0' field='[federated.0olozf80ejacbb1dmp29a0370sl0].[cnt:Medal:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0olozf80ejacbb1dmp29a0370sl0].[cnt:Medal:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#0078d0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Sport:nk]</rows>
+        <cols>[federated.0olozf80ejacbb1dmp29a0370sl0].[cnt:Medal:qk]</cols>
+      </table>
+      <simple-id uuid='{C2034FB4-7ED1-4C3B-89DE-53C8AD9ED82E}' />
+    </worksheet>
+    <worksheet name='Total Athletes by Year and Season'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='athlete_events' name='federated.0olozf80ejacbb1dmp29a0370sl0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0olozf80ejacbb1dmp29a0370sl0'>
+            <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Season]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[ID]' derivation='Count' name='[cnt:ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Season]' derivation='None' name='[none:Season:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Year:qk]' scope='cols' value='' />
+            <format attr='title' class='0' field='[federated.0olozf80ejacbb1dmp29a0370sl0].[cnt:ID:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Season:nk]' value=''>
+              <formatted-text />
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Season:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0olozf80ejacbb1dmp29a0370sl0].[cnt:ID:qk]</rows>
+        <cols>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{3622BD75-21E6-4DA1-9ED1-32DE7548B9C0}' />
+    </worksheet>
+    <worksheet name='Weight Distribution-Winners'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='athlete_events' name='federated.0olozf80ejacbb1dmp29a0370sl0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0olozf80ejacbb1dmp29a0370sl0'>
+            <column datatype='string' name='[Medal]' role='dimension' type='nominal' />
+            <column caption='Weight (bin)' datatype='integer' name='[Weight (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[Weight]' peg='0' size='10' />
+            </column>
+            <column datatype='integer' name='[Weight]' role='measure' type='quantitative' />
+            <column-instance column='[Weight]' derivation='Count' name='[cnt:Weight:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Medal]' derivation='None' name='[none:Medal:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Weight (bin)]' derivation='None' name='[none:Weight (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Medal:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Medal:nk]' member='&quot;Bronze&quot;' />
+              <groupfilter function='member' level='[none:Medal:nk]' member='&quot;Gold&quot;' />
+              <groupfilter function='member' level='[none:Medal:nk]' member='&quot;Silver&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Medal:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Gold&quot;</bucket>
+              <bucket>&quot;Silver&quot;</bucket>
+              <bucket>&quot;Bronze&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='quantitative' column='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Weight (bin):qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Medal:nk]</column>
+            <column>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Weight (bin):qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Weight (bin):qk]' scope='cols' value='' />
+            <format attr='title' class='0' field='[federated.0olozf80ejacbb1dmp29a0370sl0].[cnt:Weight:qk]' scope='rows' value='' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Medal:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0olozf80ejacbb1dmp29a0370sl0].[cnt:Weight:qk]</rows>
+        <cols>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Weight (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.0olozf80ejacbb1dmp29a0370sl0].[Weight (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{6164317F-363A-45FB-AB2F-64A1C6F97AD3}' />
+    </worksheet>
+    <worksheet name='Weight and Height Correlation'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='athlete_events' name='federated.0olozf80ejacbb1dmp29a0370sl0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0olozf80ejacbb1dmp29a0370sl0'>
+            <column datatype='integer' name='[Height]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Weight]' role='measure' type='quantitative' />
+            <column-instance column='[Height]' derivation='None' name='[none:Height:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weight]' derivation='None' name='[none:Weight:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Height:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Weight:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Weight:qk]</column>
+            <column>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Height:qk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='shape' value=':filled/circle' />
+                <format attr='mark-color' value='#00a651' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Weight:qk]</rows>
+        <cols>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Height:qk]</cols>
+      </table>
+      <simple-id uuid='{953121E8-EF2E-4011-815C-4B18638DF842}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Olympic'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98628' id='20' param='horz' type-v2='layout-flow' w='99286' x='357' y='686'>
+            <zone h='98628' id='7' param='horz' type-v2='layout-flow' w='99286' x='357' y='686'>
+              <zone h='98628' id='5' type-v2='layout-basic' w='99286' x='357' y='686'>
+                <zone h='32875' id='3' name='Male Vs. Female Participation Over Year ' w='33093' x='357' y='686'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='32875' id='9' name='Total Athletes by Year and Season' w='33096' x='66547' y='686'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='32876' id='11' name='Age Distribution-Winners' w='33093' x='357' y='66438'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='32876' id='13' name='Weight Distribution-Winners' w='33097' x='33450' y='66438'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='32876' id='14' name='Height Distribution-Winners' w='33096' x='66547' y='66438'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='32877' id='15' name='Top 10 Countries with Total Medals' w='33093' x='357' y='33561'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='32877' id='16' name='Top 10 Sports with Total Medals' w='33096' x='66547' y='33561'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='32875' id='17' name='Weight and Height Correlation' w='33097' x='33450' y='686'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='32877' id='18' is-scaled='1' param='D:/Tableau_2026/Dataset/Olympics/Olympics-logo.png' type-v2='bitmap' w='33097' x='33450' y='33561'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='6346' id='21' leg-item-layout='vert' name='Total Athletes by Year and Season' pane-specification-id='0' param='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Season:nk]' type-v2='color' w='6907' x='91800' y='-86' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2450' minheight='2450' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='23' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98628' id='22' param='vert' type-v2='layout-flow' w='99286' x='357' y='686'>
+                <zone fixed-size='255' h='32875' id='3' is-fixed='true' name='Male Vs. Female Participation Over Year ' w='33093' x='357' y='686'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='255' h='32875' id='17' is-fixed='true' name='Weight and Height Correlation' w='33097' x='33450' y='686'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='255' h='32875' id='9' is-fixed='true' name='Total Athletes by Year and Season' w='33096' x='66547' y='686'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6346' id='21' leg-item-layout='vert' name='Total Athletes by Year and Season' pane-specification-id='0' param='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Season:nk]' type-v2='color' w='6907' x='91800' y='-86'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='256' h='32877' id='15' is-fixed='true' name='Top 10 Countries with Total Medals' w='33093' x='357' y='33561'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='256' forceUpdate='true' h='32877' id='18' is-fixed='true' is-scaled='1' param='D:/Tableau_2026/Dataset/Olympics/Olympics-logo.png' type-v2='bitmap' w='33097' x='33450' y='33561'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='256' h='32877' id='16' is-fixed='true' name='Top 10 Sports with Total Medals' w='33096' x='66547' y='33561'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='255' h='32876' id='11' is-fixed='true' name='Age Distribution-Winners' w='33093' x='357' y='66438'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='255' h='32876' id='13' is-fixed='true' name='Weight Distribution-Winners' w='33097' x='33450' y='66438'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='255' h='32876' id='14' is-fixed='true' name='Height Distribution-Winners' w='33096' x='66547' y='66438'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{BF1FB98D-7C98-4529-97B7-65DAFE8833F1}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='dashboard' maximized='true' name='Olympic'>
+      <viewpoints>
+        <viewpoint name='Age Distribution-Winners'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Medal:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Height Distribution-Winners'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Male Vs. Female Participation Over Year '>
+          <zoom type='entire-view' />
+          <highlight field='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Sex:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Top 10 Countries with Total Medals'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top 10 Sports with Total Medals'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Athletes by Year and Season'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Season:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Weight Distribution-Winners'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Weight and Height Correlation'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='9' />
+      <simple-id uuid='{29000801-59B8-4F4A-9841-D6148251A923}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Age Distribution-Winners'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Medal:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Age (bin):ok]</field>
+            <field>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Medal:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{13F5C2A9-3DD7-4500-8B59-822BBE99718C}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Height Distribution-Winners'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='6' param='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Medal:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Age (bin):ok]</field>
+            <field>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Height (bin):ok]</field>
+            <field>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Medal:nk]</field>
+            <field>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Weight (bin):ok]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{87F76142-3CD9-4169-AA4D-75464AB3692F}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Male Vs. Female Participation Over Year '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Sex:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:ID:ok]</field>
+            <field>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Sex:nk]</field>
+            <field>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9D8B68E4-9873-4B79-B09B-4B13A976F1CE}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Top 10 Countries with Total Medals'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:ID:ok]</field>
+            <field>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Medal:nk]</field>
+            <field>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:NOC:nk]</field>
+            <field>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Season:nk]</field>
+            <field>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Sex:nk]</field>
+            <field>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1A4CE315-8BC0-4E2C-9DE1-7336B3CD1915}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Top 10 Sports with Total Medals'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:ID:ok]</field>
+            <field>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Medal:nk]</field>
+            <field>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:NOC:nk]</field>
+            <field>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Season:nk]</field>
+            <field>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Sex:nk]</field>
+            <field>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Sport:nk]</field>
+            <field>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A6C5091D-911D-4BBF-9A2E-C867C950EA32}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Total Athletes by Year and Season'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Season:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:ID:ok]</field>
+            <field>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Season:nk]</field>
+            <field>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Sex:nk]</field>
+            <field>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{97040074-ED49-4EE1-854A-186A9A8BB053}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Weight Distribution-Winners'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Medal:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Age (bin):ok]</field>
+            <field>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Medal:nk]</field>
+            <field>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Weight (bin):ok]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{B643BA92-2BCC-4798-A5E5-8840C4E74380}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Weight and Height Correlation'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0olozf80ejacbb1dmp29a0370sl0].[none:Weight:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D2D84712-9FEB-4D1B-A564-7FA1B7601951}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Olympic' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
